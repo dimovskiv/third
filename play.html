@@ -18,32 +18,34 @@
 
       <div class="mastheadP">
         <div class="subtext">
-            <h3 >FREE social casino games</h3>
+            <h3 class="text-center" >FREE social casino games</h3>
+            <p class="text-center">We hope you enjoy playing our free social casino games.</p>
+            <p class="text-center">Huge selection of slot games at Nerdspace.info including Wild Turkey and Conan slot machines. No signups required.</p> 
+            <p class="text-center">Come and play our online slot machines! </p>
+            <h3 class="text-center">100% Free gambling</h3>
         </div>
-        <div class="subtext">
-            <h3>100% Free</h3>
-        
-        </div>
-        <div class="subtext mt-3">
-            <p>Come and play our online slot machines! </p>
-        </div>
-      <div class="subtext">
-        <p>Huge selection of slot games at Nerdspace.info including Wild Turkey and Conan clot. No signups required.</p> 
-
-        <p>We hope you enjoy playing our free social casino games.</p>
-      </div>
       
+      
+      <div class="subtext mt-4">
+        <form class="contact-form" action="sendemail.php" method="post" enctype="text/plain">
+          <input id="name" placeholder="Name *" class="form-control">
+                    <input id="email" placeholder="E-mail *" class="form-control mt-2">
+                    <input s id="number" placeholder="Mobie number *" class="form-control mt-2">
+                   
+                    <input type="button" style="color:white !important;" onclick="sendEmail()" value="Regsiter with us to play more games" class="btnn mt-4">
+        </form>
+      </div>
      
     </div>
 
     <div class="slots">
-        <div class="item i1">
+        <div class="item i1 mt-1">
             <img src="slot1.jpg" class="img-fluid" onclick="window.location.href = 'game1.html';">
         </div>
-        <div class="item i2">
+        <div class="item i2 mt-1">
             <img src="slot2.jpg" class="img-fluid" onclick="window.location.href = 'game2.html';"> 
         </div>
-        <div class="item i3">
+        <div class="item i3 mt-1">
             <img src="slot3.jpg" class="img-fluid"  onclick="window.location.href = 'game3.html';">
         </div>
      
@@ -77,6 +79,51 @@
         </div>
     </div>
     
+
+    <script type="text/javascript">
+      function form_submit() {
+        document.getElementById("search_form").submit();
+       }    
+      </script>
+  <script type="text/javascript">
+    function sendEmail() {
+      alert ("Success");
+        var name = $("#name");
+        var email = $("#email");
+        var number = $("#number");
+  
+        if (isNotEmpty(name)) {
+            $.ajax({
+               url: 'sendEmail.php',
+               method: 'POST',
+               dataType: 'json',
+               data: {
+                   name: name.val(),
+                   email: email.val(),
+                   number: number.val(),
+               }, success: function (response) {
+                    if (response.status == "success")
+                        alert('Email Has Been Sent!');
+                    else {
+                        alert('Please Try Again!');
+                        console.log(response);
+                    }
+               }
+            });
+        }
+    }
+  
+    function isNotEmpty(caller) {
+        if (caller.val() == "") {
+            caller.css('border', '2px solid #F7F4D2');
+            return false;
+        } else
+            caller.css('border', '');
+  
+        return true;
+    }
+  </script>
+  
 
     
     <div class="cookies" id="cookies1">

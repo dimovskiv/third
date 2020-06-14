@@ -329,7 +329,7 @@ body, html {
 
 .mastheadP {
   background-image: url("bg.png");
-  height: 50%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,8 +353,15 @@ body, html {
 }
 
 .mastheadP h3 {
-  color: white;
+  color: #ffd25a;
   opacity: 0.8;
+}
+
+.mastheadP .btnn {
+  background-color: #ffd25a;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
 }
 
 .slots {
@@ -536,8 +543,9 @@ body, html {
     font-size: 20px;
   }
   .mastheadP {
+    height: 60%;
     padding: 3rem;
-    background-color: 154961 !important;
+    background-color: #154961 !important;
     background: none;
     background-repeat: repeat-y;
   }

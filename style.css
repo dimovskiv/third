@@ -366,6 +366,26 @@ body, html {
   border-radius: 20px;
 }
 
+.mastheadP .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mastheadP .subtext {
+  width: 100%;
+}
+
 .slots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,6 +570,10 @@ body, html {
     background-color: #154961 !important;
     background: none;
     background-repeat: repeat-y;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .mastheadP h3 {
     font-size: 50px;
@@ -558,6 +582,38 @@ body, html {
     font-size: 20px;
     margin-top: 10px;
     color: white;
+  }
+  .mastheadP .subtext {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+  }
+  .mastheadP .subtext .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
   }
   .navbar {
     background-color: rgba(20, 74, 98, 0.5) !important;

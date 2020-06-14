@@ -305,6 +305,17 @@ body, html {
         border-radius:20px;
      }
 
+     .form {
+         display:flex;
+         flex-direction:column;
+         justify-content: center;
+         align-items: center;
+     }
+
+
+     .subtext {
+         width:100%;
+     }
     
 }
 
@@ -499,6 +510,7 @@ body, html {
      background-color:#154961!important;
      background:none;
      background-repeat: repeat-y;
+     flex-direction:row;
      h3 {
          font-size:50px;
      }
@@ -507,6 +519,23 @@ body, html {
          font-size:20px;
          margin-top:10px;
          color:white;
+     }
+
+     .subtext {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+     
+         width:50%;
+
+         .form {
+             display:flex;
+             flex-direction:column;
+             justify-content: center;
+             align-items: center;
+             width:80%;
+         }
      }
  }
 

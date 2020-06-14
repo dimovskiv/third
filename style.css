@@ -60,6 +60,8 @@ body, html {
 
 .masthead .subtext .img-fluid {
   height: 200px;
+  width: 100%;
+  padding: 0;
 }
 
 .masthead .subtext h2 {
